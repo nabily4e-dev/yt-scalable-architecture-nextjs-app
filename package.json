@@ -1,13 +1,17 @@
 {
   "name": "my-nextjs-fullstack-app-template",
+  "author": "NabiL Ashbat",
+  "description": "experimenting",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/nabily4e-dev/yt-scalable-architecture-nextjs-app",
   "engines": {
     "node": ">=14.0.0",
     "npm": ">=1.22.0"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -24,6 +28,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
-    "husky": "^8.0.3"
+    "cross-env": "^7.0.3",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.7"
   }
 }
